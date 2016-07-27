@@ -1,0 +1,12 @@
+<resources>
+    <string name="hello">SFEMA</string>
+    <string name="app_name">SFEMA Extra Class Quiz</string>
+    <string name="menu_soundoff">Sound Off</string>
+    <string name="menu_soundon">Sound On</string>
+
+    <string name="mode_ready"></string>
+
+    <string name="fast">NEXT</string>
+    <string name="random">RANDOM</string>
+    <string name="answer">ANSWER</string>
+</resources>

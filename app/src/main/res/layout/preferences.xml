@@ -1,0 +1,45 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<PreferenceCategory android:title="Quiz Preferences"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+        <PreferenceScreen
+            android:name="Source XML"
+            android:summary="Enter Quiz File"
+            android:defaultValue="extraclass.xml"
+            android:title="Responder"
+            android:key="editTextPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditTextPreference
+            android:name="Edit Text 1"
+            android:title="Edit Text 1"
+            android:summary="Test 2"
+            android:defaultValue="Smith"
+            android:key="editText2Pref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Second Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <PreferenceScreen
+            android:key="SecondPrefScreen"
+            android:title="Second PreferenceScreen"
+            android:summary="This is a second PreferenceScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditTextPreference
+                android:name="An other EditText Preference"
+                android:summary="This is a preference in the second PreferenceScreen"
+                android:title="Edit text"
+                android:key="SecondEditTextPref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
+

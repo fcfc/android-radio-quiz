@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="#000000">
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <TextView android:id="@+id/score" android:text="0/0"
+        style="@style/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        />
+
+    <TextView android:id="@+id/question" android:text=""
+        style="@style/questionText"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        />
+
+    <TextView android:id="@+id/a" android:text=""
+        style="@style/answerText"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#777777"/>
+
+    <TextView android:id="@+id/b" android:text=" "
+        style="@style/answerText"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#777777"/>
+
+    <TextView android:id="@+id/c" android:text="  "
+        style="@style/answerText"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#777777"/>
+
+    <TextView android:id="@+id/d" android:text=" "
+        style="@style/answerText"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#777777" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/fast"
+            android:minHeight="42dp"
+            android:textSize="16dp">
+        </Button>
+
+        <Button
+            android:id="@+id/randomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/random"
+            android:minHeight="42dp"
+            android:textSize="16dp">
+        </Button>
+
+        <Button
+            android:id="@+id/answerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/answer"
+            android:minHeight="42dp"
+            android:textSize="16dp">
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
