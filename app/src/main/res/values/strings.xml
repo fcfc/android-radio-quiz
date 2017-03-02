@@ -9,4 +9,5 @@
     <string name="fast">NEXT</string>
     <string name="random">RANDOM</string>
     <string name="answer">ANSWER</string>
+    <string name="questiontag">question</string>
 </resources>

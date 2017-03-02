@@ -275,7 +275,18 @@ public class Quiz2 extends Activity {
     }
 
 
-
+/* Parse XML for answer. Structure is
+    <questions>
+     <question>
+     <name>name</name>
+     <questiontext>Question</questiontext>
+     <a>60, 20, 17, and 12 meters</a>
+     <b>160, 80, 40, and 10 meters</b>
+     <c>160, 60, 30, 17, 12, and 10 meters</c>
+     <d>160, 30, 17, 15, 12, and 10 meters</d>
+     <correct>C</correct>
+     </question>
+    */
     public void getAnswerFromXML(XmlPullParser xrp)
     {
         int i = 0;
@@ -304,7 +315,7 @@ public class Quiz2 extends Activity {
             }
             else if(eventType == XmlPullParser.START_TAG) {
                 starttag = xrp.getName();
-                if (starttag.equals("question"))  {
+                if (starttag.equals(R.string.questiontag))  {
                     begin = 1;
                 }
             }
